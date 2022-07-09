@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>HTML Semantics</title>
+    <link rel="stylesheet" href="layout.css" />
+  </head>
+  <body>
+    <!-- https://www.w3schools.com/html/html5_semantic_elements.asp -->
+    <section id="site-wrapper">
+      <header>
+        <nav>
+          <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">About</a></li>
+            <li><a href="#">Contact</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <main>
+        <h1>HTML Semantics</h1>
+
+        <!-- List All Post -->
+        <section id="posts">
+          <header>
+            <h2>Posts</h2>
+            <p>...</p>
+          </header>
+
+          <article class="post">
+            <!-- first blog post -->
+            <header class="post__header">
+              <h3 class="post__header-content">Post 1</h3>
+              <time post__header-datetime datetime="2022/07/07"
+                >2022/07/07</time
+              >
+            </header>
+            <section class="post__introduction">introduction 1</section>
+            <section class="post__content">content 1</section>
+            <section class="post__summary">summary 1</section>
+          </article>
+
+          <article class="post">
+            <!-- second blog post  -->
+            <header class="post__header">
+              <h3 class="post__header-content">Post 2</h3>
+              <time class="browser__header-datetime" datetime="2022/07/07"
+                >2022/07/07</time
+              >
+            </header>
+            <section class="post__introduction">introduction 2</section>
+            <section class="post__content">content 2</section>
+            <section class="post__summary">summary 2</section>
+          </article>
+        </section>
+
+        <!-- List All Browsers -->
+        <article id="browsers">
+          <header>
+            <h2>Most Popular Browsers</h2>
+            <p>...</p>
+          </header>
+
+          <article class="browser">
+            <header class="browser__header">
+              <h3 class="browser__header-content">Google Chrome</h3>
+              <time class="browser__header-datetime" datetime="2022/07/07"
+                >2022/07/07</time
+              >
+            </header>
+            <section class="browser__content">
+              <p>
+                Google Chrome is a web browser developed by Google, released in
+                2008. Chrome is the world's most popular web browser today!
+              </p>
+            </section>
+          </article>
+
+          <article class="browser">
+            <header class="browser__header">
+              <h3>Mozilla Firefox</h3>
+              <time class="browser__header-datetime" datetime="2022/07/07"
+                >2022/07/07</time
+              >
+            </header>
+            <section class="browser__content">
+              <p>
+                Mozilla Firefox is an open-source web browser developed by
+                Mozilla. Firefox has been the second most popular web browser
+                since January, 2018.
+              </p>
+            </section>
+          </article>
+
+          <article class="browser">
+            <header class="browser__header">
+              <h3>Microsoft Edge</h3>
+              <time class="browser__header-datetime" datetime="2022/07/07"
+                >2022/07/07</time
+              >
+            </header>
+            <section class="browser__content">
+              <p>
+                Microsoft Edge is a web browser developed by Microsoft, released
+                in 2015. Microsoft Edge replaced Internet Explorer.
+              </p>
+            </section>
+          </article>
+        </article>
+      </main>
+
+      <aside>
+        <h4>Epcot Center</h4>
+        <p>
+          Epcot is a theme park at Walt Disney World Resort featuring exciting
+          attractions, international pavilions, award-winning fireworks and
+          seasonal special events.
+        </p>
+      </aside>
+
+      <footer>
+        <p>Author: Lê Anh Vũ</p>
+        <p>
+          <a href="mailto:leanhvu21042001@gmail.com"
+            >leanhvu21042001@gmail.com</a
+          >
+        </p>
+      </footer>
+    </section>
+  </body>
+</html>

@@ -1,0 +1,58 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+main,
+mark,
+nav,
+section,
+summary,
+time {
+  display: block;
+}
+
+header {
+  grid-area: header;
+}
+
+main {
+  grid-area: main;
+}
+
+aside {
+  grid-area: aside;
+}
+
+footer {
+  grid-area: footer;
+}
+
+#site-wrapper > * {
+  border: 1px solid #000;
+}
+
+#site-wrapper {
+  display: grid;
+  grid:
+    "header header header header header header header header header header header header"
+    "main main main main main main main main main aside aside aside"
+    "footer footer footer footer footer footer footer footer footer footer footer footer";
+}
+/* 
+@media (max-width: 600px) {
+  #site-wrapper {
+    display: grid;
+    grid:
+      "header header header header header"
+      "main main main main main"
+      "aside aside aside aside aside"
+      "footer footer footer footer footer";
+  }
+} */
