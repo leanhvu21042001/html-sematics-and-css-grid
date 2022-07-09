@@ -2,6 +2,7 @@
   margin: 0;
   padding: 0;
 }
+
 article,
 aside,
 details,
@@ -40,19 +41,10 @@ footer {
 
 #site-wrapper {
   display: grid;
-  grid:
+  grid-template-columns: repeat(12, 1fr);
+  grid-auto-rows: minmax(100px, auto);
+  grid-template-areas:
     "header header header header header header header header header header header header"
     "main main main main main main main main main aside aside aside"
     "footer footer footer footer footer footer footer footer footer footer footer footer";
 }
-/* 
-@media (max-width: 600px) {
-  #site-wrapper {
-    display: grid;
-    grid:
-      "header header header header header"
-      "main main main main main"
-      "aside aside aside aside aside"
-      "footer footer footer footer footer";
-  }
-} */
